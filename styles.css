@@ -1,0 +1,119 @@
+/* Базовые стили для мобильных устройств */
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 20px;
+    background: #f0f2f5;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Стиль для офлайн-режима */
+.offline-hidden {
+    display: none;
+    background: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#offline-status{
+    text-align: center;
+    color: #684c99;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%; /* Важно для адаптивности */
+    margin: 0 auto;
+    padding: 0 15px; /* Отступы по бокам на мобильных */
+    box-sizing: border-box;
+}
+
+.input-group {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#note-input {
+    font-family: Helvetica;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #8036ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.note-item {
+    background: #e5d9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#add-note{
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.note-text{
+    margin-bottom: 10px;
+    flex-grow: 1; /* Занимает всё доступное пространство */
+    margin-right: 15px;
+    word-wrap: break-word; /* Перенос длинных слов */
+    white-space: pre-wrap; /* Сохраняет переносы строк и пробелы */
+    overflow-wrap: break-word;
+    cursor: text; /* Меняем курсор при наведении */
+}
+
+.note-text.editing {
+    background: #fff9c4;
+}
+
+.edit-input {
+    font-family: Helvetica;
+    font-size: 16px;
+    width: 94%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: vertical;
+    margin-bottom: 7px;
+    background-color: #f0e9fb;
+}
+
+.delete-btn{
+    background: #684c99;
+    width: 85px;
+    height: 30px;
+    padding: 7px 20px;
+    font-size: 11px;
+    color: #e8ddfa;
+}
